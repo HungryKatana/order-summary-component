@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+a {
+    transition: 300ms;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Red Hat Display', sans-serif;
+    background: hsl(223, 47%, 23%);
+    background: url('/img/pattern-background-desktop.svg') no-repeat, hsl(225, 100%, 94%);
+    background-size: 100%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.hero {
+    width: 100%;
+    max-width: 450px;
+    min-height: 657px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.hero__img {
+    width: 100%;
+    min-height: 220px;
+    background: url('/img/illustration-hero.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 3.2em;
+}
+
+.hero-content {
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: .8em;
+}
+
+.hero-content__title {
+    margin: 0;
+    line-height: 1;
+    font-size: 1.8em;
+    margin-bottom: .7em;
+    color: #11284C;
+    font-weight: 700;
+}
+
+.hero-content__text {
+    margin: 0;
+    color: #808398;
+    padding: 0 2em;
+    line-height: 1.7em;
+    font-weight: 500;
+}
+
+.hero-action {
+    padding: 0 50px 50px 50px;
+}
+
+.offer-block {
+    width: 100%;
+    background-color: #F8F9FF;
+    padding: 1.3em;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.offer-block__primary {
+    display: flex;
+    align-items: center;
+}
+
+.offer-block__img {
+    margin-right: 1em;
+}
+
+.offer-block__price {
+    line-height: 1.8;
+}
+
+.offer-block__price-name {
+   margin: 0;
+   font-size: 1em;
+   font-weight: 900;
+}
+
+.offer-block__price-cost {
+    margin: 0;
+    color: hsl(224, 23%, 55%);
+}
+
+.offer-block__link:hover {
+    opacity: .7;
+}
+
+
+.payment-button {
+    display: block;
+    color: #fff;
+    background-color: #372AE0;
+    padding: .9em;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 2em;
+    box-shadow: 0px 15px 20px rgba(56, 41, 224, .3);
+}
+
+.payment-button:hover {
+    opacity: .7;
+}
+
+.cancel-button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+.cancel-button:hover {
+    color: rgb(14, 13, 13);
+}
+
+@media (max-width:460px) {
+    .container {
+        padding: .8em;
+    }
+
+    body {
+        background: url(images/pattern-background-mobile.svg) no-repeat, hsl(225, 100%, 94%);
+    }
+
+    .hero-content {
+        padding: 0 1em;
+    }
+
+    .hero-action {
+        padding: 0 1em;
+    }
+}
